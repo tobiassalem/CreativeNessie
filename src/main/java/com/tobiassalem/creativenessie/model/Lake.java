@@ -1,7 +1,7 @@
 package com.tobiassalem.creativenessie.model;
 
 /**
- * Model class representing a Lake in the Loch Ness are
+ * Model class representing a Lake in the Loch Ness area.
  *
  * @author Tobias
  */
@@ -9,11 +9,11 @@ public class Lake {
 
     private Integer number;
     private String name;
-
     private boolean nessieInThisLake;
 
     public Lake(Integer lakeNumber) {
         this.number = lakeNumber;
+        nessieInThisLake = false;
     }
 
     public Integer getNumber() {

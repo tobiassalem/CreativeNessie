@@ -41,7 +41,7 @@ public class NessieSimulation {
     /**
      * Try to find Nessie in the lake with the given lake number.
      *
-     * @param lakeNumber
+     * @param lakeNumber the number of the lake to search
      * @return true if Nessie is found, false otherwise.
      */
     public boolean findNessie(int lakeNumber) {
@@ -84,7 +84,7 @@ public class NessieSimulation {
      * From the set of all doors, select a random non-price door which is not already selected by the player.
      * Then select one remaining - always non-winning - door at random.
      *
-     * @return
+     * @return the number of the lake with the stated criteria
      */
     private Integer findRandomNonLuckyNonSearchedLake() {
 
