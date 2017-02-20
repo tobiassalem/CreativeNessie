@@ -26,13 +26,10 @@ public class NessieSimulation {
 
     public NessieSimulationResult runFindNessieSimulation(int lakeToSearch, boolean shouldSwitchLake) {
         boolean nessieFound = findNessie(lakeToSearch);
-        //System.out.println("runFindNessieSimulation, lakeToSearch: " +lakeToSearch+ ", shouldSwitch: " +shouldSwitchLake+ ", nessieFound: " +nessieFound);
-        //System.out.println("runFindNessieSimulation, nrOfLakes: " +lakes.size()+ ", luckyLake: " +luckyLake);
 
-        Integer lakePresentedAsNonLucky = findRandomNonLuckyNonSearchedLake();
         if (shouldSwitchLake) {
+            Integer lakePresentedAsNonLucky = findRandomNonLuckyNonSearchedLake();
             nessieFound = findNessie(findLakeToSwitchTo(lakePresentedAsNonLucky));
-            //System.out.println("swithcedLake, nessieFound: " +nessieFound);
         }
 
         return new NessieSimulationResult(nessieFound, shouldSwitchLake);
