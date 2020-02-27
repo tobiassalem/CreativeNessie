@@ -148,11 +148,11 @@ public class FindNessieSimulationSessionResult {
     }
 
     public double getPercentageWonWithLakeKept() {
-        return NumberHelper.calculatPercentage(nrOfGamesWonWithLakeKept, nrOfGamesWithLakeKept);
+        return NumberHelper.calculatePercentage(nrOfGamesWonWithLakeKept, nrOfGamesWithLakeKept);
     }
 
     public double getPercentageWonWithLakeSwitched() {
-        return NumberHelper.calculatPercentage(nrOfGamesWonWithLakeSwitched, nrOfGamesWithLakeSwitched);
+        return NumberHelper.calculatePercentage(nrOfGamesWonWithLakeSwitched, nrOfGamesWithLakeSwitched);
     }
 
     public void reportGameSessionStatistics() {

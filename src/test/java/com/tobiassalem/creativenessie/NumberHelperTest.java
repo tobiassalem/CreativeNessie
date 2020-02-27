@@ -19,7 +19,7 @@ public class NumberHelperTest {
     @Test
     public void getRandomIntExlusiveUpperBound() throws Exception {
         for (int i = 0; i < 10; i++) {
-            int randomInt = NumberHelper.getRandomIntExlusiveUpperBound(1, 5);
+            int randomInt = NumberHelper.getRandomIntExclusiveUpperBound(1, 5);
             assertThat("randomInt lower bound", randomInt, greaterThan(0));
             assertThat("randomInt upper bound", randomInt, lessThan(5));
         }
@@ -38,7 +38,7 @@ public class NumberHelperTest {
     public void calculatPercentage() throws Exception {
         int nominator = 42;
         int denominator = 100;
-        double percentage = NumberHelper.calculatPercentage(nominator, denominator);
+        double percentage = NumberHelper.calculatePercentage(nominator, denominator);
         assertEquals(42.0, percentage, DELTA);
     }
 
@@ -46,7 +46,7 @@ public class NumberHelperTest {
     public void calculatPercentageDoubleVersion() throws Exception {
         double nominator = 42.0;
         double denominator = 100.0;
-        double percentage = NumberHelper.calculatPercentage(nominator, denominator);
+        double percentage = NumberHelper.calculatePercentage(nominator, denominator);
         assertEquals(42.0, percentage, DELTA);
 
     }

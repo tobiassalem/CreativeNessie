@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.Serializable;
 
 /**
- * Class for keeping data from one simulation
+ * Class for keeping result data from one Nessie simulation
  *
  * @author Tobias
  */
@@ -14,8 +14,11 @@ public class NessieSimulationResult implements Serializable {
     private boolean nessieFound;
     private boolean lakeChoiceSwitched;
 
+    /**
+     * Default constructor needed for serialization
+     */
+    @SuppressWarnings("unused")
     public NessieSimulationResult() {
-
     }
 
     public NessieSimulationResult(boolean nessieFound, boolean lakeChoiceSwitched) {

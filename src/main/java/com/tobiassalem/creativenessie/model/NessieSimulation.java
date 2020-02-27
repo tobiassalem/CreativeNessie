@@ -50,7 +50,7 @@ public class NessieSimulation {
     }
 
     private Integer placeNessieInRandomLake() {
-        int luckyLake = NumberHelper.getRandomIntExlusiveUpperBound(1, 4);
+        int luckyLake = NumberHelper.getRandomIntExclusiveUpperBound(1, 4);
         lakes.get(luckyLake).setNessieInThisLake(true);
         return luckyLake;
     }
