@@ -11,8 +11,7 @@ Here is the problem: Does it matter if you switch?
 @See http://montyhallproblem.com/
 
 ### Purpose
-The purpose of the application is to verify and report to the user that in the “Monty Hall problem”, 
-it is statistically beneficial for you to switch choice. To always keep your choice is statistically less beneficial.
+The purpose of the application is to verify that in the “Monty Hall problem”,  it is statistically beneficial for you to switch choice (door, lake, or whatever it may be in any given game). To always keep your choice is statistically less beneficial.
 
 ### Method
 This is implemented as a REST service with integration tests to illustrate the mathematical fact.
